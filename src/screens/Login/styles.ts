@@ -1,3 +1,4 @@
+import {theme} from '../../config/theme';
 import styled from 'styled-components/native';
 
 export const Container = styled.ImageBackground.attrs({
@@ -7,4 +8,11 @@ export const Container = styled.ImageBackground.attrs({
   height: 100%;
   align-items: center;
   justify-content: center;
+  background-color: ${theme.grays.light};
+`;
+
+export const ButtonContainer = styled.View`
+  position: absolute;
+  right: -15%;
+  bottom: -5%;
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 // Theme
-type DesignTexts = 'title' | 'bodyRegular';
+type DesignTexts = 'title' | 'bodyRegular' | 'buttonLarge';
 type FontWeight = 'regular' | 'Regular' | 'semibold' | 'bold' | 'black';
 
 export type TextProps = {
@@ -31,6 +31,11 @@ const VariantStyles: Record<DesignTexts, string> = {
   bodyRegular: `
     font-size: 14px;
     line-height: 21px;
+    font-family: Poppins-Regular;
+  `,
+  buttonLarge: `
+    font-size: 20px;
+    line-height: 30px;
     font-family: Poppins-Regular;
   `,
 };
