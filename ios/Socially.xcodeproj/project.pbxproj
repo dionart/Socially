@@ -12,9 +12,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		6E11BCB5ECE546FCAD1E8B4D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AD8FE4E7C614AC983EF40D2 /* Poppins-Bold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-Socially-SociallyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Socially-SociallyTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		6E11BCB5ECE546FCAD1E8B4D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AD8FE4E7C614AC983EF40D2 /* Poppins-Bold.ttf */; };
 		854156C30A1F4339BF5CA9A8 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F33A7E3F2CF941E8896D5C12 /* Poppins-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -41,13 +41,16 @@
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-Socially-SociallyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Socially-SociallyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-Socially.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socially.debug.xcconfig"; path = "Target Support Files/Pods-Socially/Pods-Socially.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Socially.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socially.release.xcconfig"; path = "Target Support Files/Pods-Socially/Pods-Socially.release.xcconfig"; sourceTree = "<group>"; };
+		5A6F3AE1287E463E00D90204 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		5A6F3AE2287E463E00D90204 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		5A6F3AE3287E463E00D90204 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Socially-SociallyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socially-SociallyTests.debug.xcconfig"; path = "Target Support Files/Pods-Socially-SociallyTests/Pods-Socially-SociallyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Socially.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Socially.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD8FE4E7C614AC983EF40D2 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Socially/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Socially-SociallyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socially-SociallyTests.release.xcconfig"; path = "Target Support Files/Pods-Socially-SociallyTests/Pods-Socially-SociallyTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		7AD8FE4E7C614AC983EF40D2 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F33A7E3F2CF941E8896D5C12 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F33A7E3F2CF941E8896D5C12 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 		13B07FAE1A68108700A75B9A /* Socially */ = {
 			isa = PBXGroup;
 			children = (
+				5A6F3ADD287E442400D90204 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -108,6 +112,16 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-Socially-SociallyTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A6F3ADD287E442400D90204 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5A6F3AE1287E463E00D90204 /* Feather.ttf */,
+				5A6F3AE2287E463E00D90204 /* FontAwesome.ttf */,
+				5A6F3AE3287E463E00D90204 /* MaterialCommunityIcons.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -154,14 +168,13 @@
 			sourceTree = "<group>";
 		};
 		FB208E29CC0B47A08B753056 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				7AD8FE4E7C614AC983EF40D2 /* Poppins-Bold.ttf */,
 				F33A7E3F2CF941E8896D5C12 /* Poppins-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 

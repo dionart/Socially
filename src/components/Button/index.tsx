@@ -1,5 +1,13 @@
 import React from 'react';
-import {ButtonShape, ButtonText, Container, ButtonInner} from './styles';
+import {
+  ButtonShape,
+  ButtonText,
+  Container,
+  ButtonInner,
+  TextContainer,
+} from './styles';
+import Icon from 'react-native-vector-icons/Feather';
+import {View} from 'react-native';
 
 type ButtonProps = {
   text: string;
@@ -12,7 +20,10 @@ export const Button: React.FC = () => {
       <ButtonShape>
         <ButtonInner />
       </ButtonShape>
-      <ButtonText>Next</ButtonText>
+      <TextContainer>
+        <ButtonText marginRight={16}>Next</ButtonText>
+        <Icon name="arrow-right" color="#fff" size={16} />
+      </TextContainer>
     </Container>
   );
 };

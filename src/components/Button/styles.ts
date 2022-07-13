@@ -2,7 +2,7 @@ import {theme} from '../../config/theme';
 import styled from 'styled-components/native';
 import {Text} from '../Text';
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
 `;
@@ -18,7 +18,7 @@ export const ButtonShape = styled.View`
   border: 1px solid ${theme.grays.dark};
 `;
 
-export const ButtonInner = styled.TouchableOpacity`
+export const ButtonInner = styled.View`
   width: 236px;
   height: 242px;
   background-color: ${theme.grays.dark};
@@ -31,6 +31,11 @@ export const ButtonInner = styled.TouchableOpacity`
 export const ButtonText = styled(Text).attrs({
   type: 'buttonLarge',
 })`
-  position: absolute;
   color: ${theme.grays.light};
+`;
+
+export const TextContainer = styled.View`
+  position: absolute;
+  align-items: center;
+  flex-direction: row;
 `;
