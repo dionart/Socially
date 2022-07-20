@@ -11,18 +11,19 @@ import {View} from 'react-native';
 
 type ButtonProps = {
   text: string;
-  icon: string;
+  icon?: string;
+  onPress: () => void;
 };
 
-export const Button: React.FC = () => {
+export const Button: React.FC<ButtonProps> = ({text, icon, onPress}) => {
   return (
-    <Container>
+    <Container onPress={onPress}>
       <ButtonShape>
         <ButtonInner />
       </ButtonShape>
       <TextContainer>
-        <ButtonText marginRight={16}>Next</ButtonText>
-        <Icon name="arrow-right" color="#fff" size={16} />
+        <ButtonText marginRight={16}>{text}</ButtonText>
+        {icon && <Icon name={icon} color="#fff" size={16} />}
       </TextContainer>
     </Container>
   );

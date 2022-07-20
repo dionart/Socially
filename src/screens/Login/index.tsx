@@ -1,37 +1,30 @@
 import React from 'react';
+import {View} from 'react-native';
 
-import {ButtonContainer, Container, Content} from './styles';
-import HeroSVG from '../../assets/images/hero.svg';
+import {Container} from './styles';
+import HeroSVG from '../../assets/images/hero2.svg';
 import {Text} from '../../components/Text';
-
+import Input from '../../components/Input';
+import {Box} from '../../components/Box';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {ButtonContainer} from '../Welcome/styles';
 import {Button} from '../../components/Button';
-import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
-import {StatusBar, View} from 'react-native';
-import {Carrousel} from '../../components/Carrousel';
 
 const Login: React.FC = () => {
-  return (
-    <SafeAreaProvider>
-      <StatusBar barStyle="dark-content" />
-      <Container>
-        <Content>
-          <Text color="#4E4E4E" type="bodyRegular">
-            Welcome to
-          </Text>
-          <Text marginBottom={58} align="center" type="title">
-            Socially
-          </Text>
+  const insets = useSafeAreaInsets();
 
-          {/* <HeroSVG style={{marginBottom: 58}} /> */}
-          <View>
-            <Carrousel />
-          </View>
-        </Content>
-        <ButtonContainer>
-          <Button />
-        </ButtonContainer>
-      </Container>
-    </SafeAreaProvider>
+  return (
+    <Container style={{paddingTop: insets.top}}>
+      <HeroSVG style={{marginTop: '10%'}} />
+      <Text type="title">Socially</Text>
+      <Box padding={24}>
+        <Input placeholder="Email" icon="mail" />
+        <Input marginTop={16} placeholder="Password" icon="lock" />
+      </Box>
+      <ButtonContainer>
+        <Button text="Login" icon="arrow-right" />
+      </ButtonContainer>
+    </Container>
   );
 };
 
