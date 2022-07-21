@@ -12,6 +12,7 @@ export const theme = {
   },
   accents: {
     pink: '#F5C8C6',
+    light_pink: '#FFE1E0',
     beige: '#EEF2E2',
   },
   default: '#4507a1',

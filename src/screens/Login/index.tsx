@@ -9,9 +9,11 @@ import {Box} from '../../components/Box';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {ButtonContainer} from '../Welcome/styles';
 import {Button} from '../../components/Button';
+import {useNavigation} from '@react-navigation/native';
 
 const Login: React.FC = () => {
   const insets = useSafeAreaInsets();
+  const navigation = useNavigation();
 
   return (
     <Container style={{paddingTop: insets.top}}>
@@ -22,7 +24,11 @@ const Login: React.FC = () => {
         <Input marginTop={16} placeholder="Password" icon="lock" />
       </Box>
       <ButtonContainer>
-        <Button text="Login" icon="arrow-right" />
+        <Button
+          onPress={() => navigation.navigate('Home')}
+          text="Login"
+          icon="arrow-right"
+        />
       </ButtonContainer>
     </Container>
   );

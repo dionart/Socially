@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 // Theme
-type DesignTexts = 'title' | 'bodyRegular' | 'buttonLarge';
+type DesignTexts = 'title' | 'bodyRegular' | 'buttonLarge' | 'header' | 'H2';
 type FontWeight = 'regular' | 'Regular' | 'semibold' | 'bold' | 'black';
 
 export type TextProps = {
@@ -28,10 +28,20 @@ const VariantStyles: Record<DesignTexts, string> = {
     line-height: 58px;
     font-family: Poppins-Bold;
   `,
+  H2: `
+    font-size: 25px;
+    line-height: 38px;
+    font-family: Poppins-Bold;
+  `,
   bodyRegular: `
     font-size: 14px;
     line-height: 21px;
     font-family: Poppins-Regular;
+  `,
+  header: `
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Poppins-Bold;
   `,
   buttonLarge: `
     font-size: 20px;
