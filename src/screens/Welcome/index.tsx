@@ -1,14 +1,13 @@
 import React from 'react';
 
 import {ButtonContainer, Container, Content} from './styles';
-import HeroSVG from '../../assets/images/hero.svg';
-import {Text} from '../../components/Text';
 
-import {Button} from '../../components/Button';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {StatusBar, View} from 'react-native';
-import {Carrousel} from '../../components/Carrousel';
 import {useNavigation} from '@react-navigation/native';
+import {Text} from '@/components/Text';
+import {Carrousel} from '@/components/Carrousel';
+import {Button} from '@/components/Button';
 
 const Welcome: React.FC = () => {
   const navigation = useNavigation();
