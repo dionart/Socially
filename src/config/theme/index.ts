@@ -9,6 +9,7 @@ export const theme = {
   },
   mainColors: {
     dark_blue: '#25A0B0',
+    lighter_blue: '#7DB9B3',
     light_blue: '#E1F6F4',
   },
   accents: {

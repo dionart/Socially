@@ -8,6 +8,7 @@ import Home from '../../screens/Home';
 import {Text} from '../../components/Text';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Box} from '../../components/Box';
+import BottomNavigator from '../BottomNavigator';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,7 +20,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen
           options={{
-            headerShown: true,
+            headerShown: false,
             headerLeft: () => (
               <Text marginLeft={8} type="header">
                 Socially
@@ -34,7 +35,7 @@ const AppNavigator = () => {
             headerTransparent: true,
           }}
           name="Home"
-          component={Home}
+          component={BottomNavigator}
         />
       </Stack.Navigator>
     </NavigationContainer>
