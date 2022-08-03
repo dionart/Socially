@@ -20,7 +20,7 @@ const BottomNavigator = () => {
     <>
       <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
         <Box style={styles.button}>
-          <Feather color={theme.grays.light} name="x-circle" size={20} />
+          <Feather color={theme.grays.light} name="x-circle" size={22} />
         </Box>
       </TouchableOpacity>
     </>
