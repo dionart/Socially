@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {View} from 'react-native';
 
 import {Container} from './styles';
@@ -10,18 +10,28 @@ import {Button} from '@/components/Button';
 import {Box} from '@/components/Box';
 import Input from '@/components/Input';
 import {Text} from '@/components/Text';
+import {NavigatorParamList} from '@/navigators/navigatorParamList';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
 const Login: React.FC = () => {
   const insets = useSafeAreaInsets();
-  const navigation = useNavigation();
+  const navigation =
+    useNavigation<NativeStackNavigationProp<NavigatorParamList>>();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <Container style={{paddingTop: insets.top}}>
       <HeroSVG style={{marginTop: '10%'}} />
       <Text type="title">Socially</Text>
       <Box padding={24}>
-        <Input placeholder="Email" icon="mail" />
-        <Input marginTop={16} placeholder="Password" icon="lock" />
+        <Input onChangeText={setEmail} placeholder="Email" icon="mail" />
+        <Input
+          onChangeText={setPassword}
+          marginTop={16}
+          placeholder="Password"
+          icon="lock"
+        />
       </Box>
       <ButtonContainer>
         <Button

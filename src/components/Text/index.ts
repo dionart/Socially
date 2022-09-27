@@ -7,7 +7,9 @@ type DesignTexts =
   | 'buttonLarge'
   | 'header'
   | 'H2'
-  | 'captions';
+  | 'captions'
+  | 'bodyCopy';
+
 type FontWeight = 'regular' | 'Regular' | 'semibold' | 'bold' | 'black';
 
 export type TextProps = {
@@ -38,6 +40,11 @@ const VariantStyles: Record<DesignTexts, string> = {
     font-size: 25px;
     line-height: 38px;
     font-family: Poppins-Bold;
+  `,
+  bodyCopy: `
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Poppins-Regular;
   `,
   bodyRegular: `
     font-size: 14px;

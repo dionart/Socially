@@ -9,8 +9,6 @@ interface ProfileImageProps {
 export const Container = styled.ImageBackground.attrs({
   source: require('../../assets/images/homeBg.png'),
 })`
-  width: 100%;
-  height: 100%;
   flex: 1;
   background-color: ${theme.grays.light};
 `;
@@ -31,13 +29,4 @@ export const ListHeaderContainer = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   margin-right: 30px;
-`;
-
-export const Badge = styled.View`
-  width: 70px;
-  border-radius: 35px;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(229, 229, 229, 0.4);
-  height: 27px;
 `;

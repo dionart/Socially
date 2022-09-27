@@ -9,8 +9,9 @@ import {Text} from '../../components/Text';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {Box} from '../../components/Box';
 import BottomNavigator from '../BottomNavigator';
+import {NavigatorParamList} from '../navigatorParamList';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<NavigatorParamList>();
 
 const AppNavigator = () => {
   return (

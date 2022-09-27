@@ -12,6 +12,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import {Box} from '../../components/Box';
 import {theme} from '@/config/theme';
 import {StyleSheet, TouchableOpacity} from 'react-native';
+import Profile from '@/screens/Profile';
 
 const Tab = createBottomTabNavigator();
 
@@ -36,9 +37,11 @@ const BottomNavigator = () => {
           </Text>
         ),
         headerRight: () => (
-          <Box marginRight={24}>
-            <Icon size={18} name="bell" />
-          </Box>
+          <TouchableOpacity>
+            <Box marginRight={24}>
+              <Icon size={18} name="bell" />
+            </Box>
+          </TouchableOpacity>
         ),
         headerTitle: '',
         headerTransparent: true,
@@ -121,7 +124,7 @@ const BottomNavigator = () => {
           title: '',
         }}
         name="Profile"
-        component={Home}
+        component={Profile}
       />
     </Tab.Navigator>
   );
